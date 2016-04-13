@@ -258,6 +258,11 @@ public class MissedCallNotifierImpl extends CallsManagerListenerBase implements 
         cancelMissedCallNotification();
     }
 
+    @Override
+    public void clearMissedCallNotifications() {
+        cancelMissedCallNotification();
+    }
+
     /**
      * Broadcasts missed call notification to custom component if set.
      * @param number The phone number associated with the notification. null if
